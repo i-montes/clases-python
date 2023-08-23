@@ -73,6 +73,7 @@ var5 = [] # False
 var6 = [1,2,"123"] #True
 var7 = () # False
 var8 = (1,2,3) # True
+var9 = None # False
 
 #> Arrays (list[index])
 var1 = [1,2,3,4,5,6,7,8,9,0]
@@ -90,8 +91,33 @@ var1 = (1,2,3,4)
 
 
 
+# dictionary (dict)
 
+article = {
+    "id": 1,
+    "title": "Como hacer granjas en minecraft",
+    "description": "Lorem ipsum tardem tum",
+    "isPublished": True,
+    "likes": 12.000,
+    "comments":[
+        "Hola, me gusto el video",
+        "buenisimo, gracias"
+        "wow"
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "pistache"
+        }
+    ],
+    "image":{
+        "id": 10,
+        "filename": "/image/nombre.jpg"
+    }
+}
 
+article['image']['filename'] = "Hola mundo"
 
+print(article['image'])
 
 
